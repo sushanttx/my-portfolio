@@ -18,10 +18,6 @@ const navLinks = [
         title:"Contacts",
         path:"#contacts"
     },
-    {
-        title:"Achievements",
-        path:"#ach"
-    }
 ]
 
 const Navbar = () => {
@@ -29,7 +25,7 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-10">
         <div className="flex flex-wrap items-center justify-between mx-auto p-4 bg-opacity-90">
-            <Link href={"/"} className="text-2xl md:text-4xl text-white font-semibold hover:opacity-70">LOGO</Link>
+            <Link href={"/"} className="text-xl md:text-2xl text-white font-semibold hover:opacity-70">Home</Link>
             <div className="mobile-menu block md:hidden">
                 {
                     !navbarOpen ?(

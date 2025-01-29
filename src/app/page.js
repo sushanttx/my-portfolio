@@ -5,7 +5,7 @@ import AboutSection from "./components/AboutSection";
 import ProjectsSection from "./components/ProjectsSection";
 import EmailSection from "./components/EmailSection";
 import Footer from "./components/Footer";
-import PublicationSection from "./components/PublicationSection";
+// import PublicationSection from "./components/PublicationSection";
 
 export default function Home() {
   return (
@@ -15,7 +15,7 @@ export default function Home() {
         <HeroSection/>
         <AboutSection/>
         <ProjectsSection/>
-        <PublicationSection/>
+        {/* <PublicationSection/> */}
         <EmailSection/>
       </div>
       <Footer/>

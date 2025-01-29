@@ -41,7 +41,7 @@ const EmailSection = () => {
 
   return (
     <section
-      id="contact"
+      id="contacts"
       className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative"
     >
       <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))]  absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2"></div>
@@ -55,10 +55,10 @@ const EmailSection = () => {
           open. Whether you have a question or just want to say hi, just drop a message and I&apos;ll make sure to reach out to you!
         </p>
         <div className="socials flex flex-row gap-2">
-          <Link href="github.com">
+          <Link href="https://github.com/sushanttx">
             <Image src={GithubIcon} alt="Github Icon" />
           </Link>
-          <Link href="linkedin.com">
+          <Link href="https://www.linkedin.com/in/sushantlanghi/">
             <Image src={LinkedinIcon} alt="Linkedin Icon" />
           </Link>
         </div>
