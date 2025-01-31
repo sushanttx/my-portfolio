@@ -17,7 +17,7 @@ const projectData = [
         id:2,
         title: "We Collab",
         description: "Full Stack Web and Cloud Development",
-        image: "/images/projects/2.jpg",
+        image: "fullproj.png",
         tag: ["All","Web Dev", "Cloud"],
         gitUrl: "https://github.com/sushanttx/fullstack-filestorage",
         previewUrl: "/"
