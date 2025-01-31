@@ -3,6 +3,10 @@
 
 Welcome to my personal portfolio website. This project showcases my work, skills, and projects in a web-based format.
 
+![Hero Section](readmeImages/1.png)
+![About Section](readmeImages/2.png)
+![Contact Section](readmeImages/3.png)
+
 ## Table of Contents
 
 - [About](#about)
