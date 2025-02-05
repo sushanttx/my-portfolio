@@ -1,5 +1,5 @@
 "use client";
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import Link from 'next/link';
 import NavLink from './NavLink';
 import {Bars3Icon, XMarkIcon} from "@heroicons/react/24/solid";
@@ -22,10 +22,29 @@ const navLinks = [
 
 const Navbar = () => {
    const [navbarOpen, setNavbarOpen] = useState(false);
+   const [scrolling, setScrolling] = useState(false);
+
+   // Detect Scroll Position
+   useEffect(() => {
+       const handleScroll = () => {
+           if (window.scrollY > 50) {
+               setScrolling(true);
+           } else {
+               setScrolling(false);
+           }
+       };
+
+       window.addEventListener("scroll", handleScroll);
+       return () => {
+           window.removeEventListener("scroll", handleScroll);
+       };
+   }, []);
+
   return (
-    <nav className="fixed top-0 left-0 right-0 z-10">
-        <div className="flex flex-wrap items-center justify-between mx-auto p-4 bg-opacity-90">
-            <Link href={"/"} className="text-xl md:text-2xl text-white font-semibold hover:opacity-70">Home</Link>
+    <nav className={`fixed top-0 left-0 right-0 z-10 transition-all duration-300 
+    ${scrolling ? "bg-black bg-opacity-80 backdrop-blur-md shadow-md" : "bg-transparent"}`}>
+        <div className="flex flex-wrap items-center justify-between mx-auto p-4">
+            <Link href={"/"} className="text-xl md:text-2xl text-white font-semibold hover:opacity-100">Home</Link>
             <div className="mobile-menu block md:hidden">
                 {
                     !navbarOpen ?(
