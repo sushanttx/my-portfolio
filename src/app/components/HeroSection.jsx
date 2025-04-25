@@ -22,7 +22,7 @@ const HeroSection = () => {
       ([entry]) => {
         setIsVisible(entry.isIntersecting);
       },
-      { threshold: 0.2 } // 20% of the section must be visible
+      { threshold: 0.0 } // 0% of the section must be visible
     );
 
     if (heroRef.current) {
