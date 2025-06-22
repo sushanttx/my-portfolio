@@ -44,7 +44,7 @@ const Navbar = () => {
     <nav className={`fixed top-0 left-0 right-0 z-10 transition-all duration-300 
     ${scrolling ? "bg-black bg-opacity-80 backdrop-blur-md shadow-md" : "bg-transparent"}`}>
         <div className="flex flex-wrap items-center justify-between mx-auto p-4">
-            <Link href={"/"} className="text-xl md:text-2xl text-white font-semibold hover:opacity-100">Sushant Langhi</Link>
+            <Link href={"/"} className="text-xl md:text-2xl text-white font-semibold hover:opacity-100">SL</Link>
             <div className="mobile-menu block md:hidden">
                 {
                     !navbarOpen ?(

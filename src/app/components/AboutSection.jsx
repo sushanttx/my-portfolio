@@ -42,9 +42,9 @@ const TAB_DATA = [
     content: (
       <ul className="list-disc pl-2">
         <li>PICT (Computer Engineering), Pune.
-          <br /> - CGPA: 7.55 <br />- Tenure: 2021 - Present</li><br />
+          <br /> - CGPA: 7.71 <br />- Tenure: 2021 - 2025</li><br />
         <li>Fergusson College - HSC, Pune. <br />- Marks: 80%
-        <br /> - Tenure: 2019 – 21</li>
+        <br /> - Tenure: 2019 – 2021</li>
       </ul>
     )
   }
