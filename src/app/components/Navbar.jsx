@@ -43,8 +43,33 @@ const Navbar = () => {
   return (
     <nav className={`fixed top-0 left-0 right-0 z-10 transition-all duration-300 
     ${scrolling ? "bg-black bg-opacity-80 backdrop-blur-md shadow-md" : "bg-transparent"}`}>
-        <div className="flex flex-wrap items-center justify-between mx-auto p-4">
+        <div className="flex flex-wrap items-center justify-between mx-auto p-4 gap-4">
             <Link href={"/"} className="text-xl md:text-2xl text-white font-semibold hover:opacity-100">SL</Link>
+            <div className="flex items-center gap-4 hover:scale-105 transition-all duration-300 ml-auto">
+
+                <Link
+                    href="https://jetsetgo-rust.vercel.app"
+                    className="flex items-center"
+                >
+                    <img
+                    src="/birb.png"
+                    alt="icon"
+                    className="w-10 h-10 opacity-90"
+                    />
+
+                    <span
+                    className="hidden md:flex items-center px-4 py-2 rounded-full 
+                                bg-gradient-to-r from-blue-500 to-indigo-600 
+                                text-white font-medium shadow-lg shadow-blue-500/20
+                                hover:shadow-blue-500/40 "
+                    >
+                    Check Out JetSetGo!
+                    </span>
+                </Link>
+
+                </div>
+
+
             <div className="mobile-menu block md:hidden">
                 {
                     !navbarOpen ?(
@@ -58,6 +83,7 @@ const Navbar = () => {
                     )
                 }
             </div>
+
             <div className="menu hidden md:block md:w-auto" id="navbar">
                 <ul className="flex p-4 md:p-0 md:flex-row md:space-x-8 mt-0">
                     {
