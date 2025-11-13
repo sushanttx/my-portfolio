@@ -54,11 +54,11 @@ const Navbar = () => {
                     <img
                     src="/birb.png"
                     alt="icon"
-                    className="w-10 h-10 opacity-90"
+                    className="w-10 h-10 opacity-90 shadow-blue-500/20 hover:shadow-blue-500/40"
                     />
 
                     <span
-                    className="hidden md:flex items-center px-4 py-2 rounded-full 
+                    className="md:flex items-center px-4 py-2 rounded-full 
                                 bg-gradient-to-r from-blue-500 to-indigo-600 
                                 text-white font-medium shadow-lg shadow-blue-500/20
                                 hover:shadow-blue-500/40 "
